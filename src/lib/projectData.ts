@@ -1,4 +1,3 @@
-
 import { ProjectData } from './types/projectTypes';
 import { technologyProjects } from './data/technologyProjects';
 import { healthProjects } from './data/healthProjects';
