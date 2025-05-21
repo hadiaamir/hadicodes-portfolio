@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -35,12 +36,16 @@ const HeroSection = () => {
           
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 btn-hover-effect text-lg py-6">
-              View My Projects <ArrowRight className="ml-2" />
-            </Button>
-            <Button variant="outline" className="border border-purple-500 hover:bg-purple-500/20 btn-hover-effect text-lg py-6">
-              Contact Me
-            </Button>
+            <a href="#projects">
+              <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 btn-hover-effect text-lg py-6 w-full sm:w-auto">
+                View My Projects <ArrowRight className="ml-2" />
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button variant="outline" className="border border-purple-500 hover:bg-purple-500/20 btn-hover-effect text-lg py-6 w-full sm:w-auto">
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       </div>

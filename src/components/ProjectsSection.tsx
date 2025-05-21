@@ -2,13 +2,17 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { getAllProjects } from '@/lib/projectData';
 
 const ProjectCard = ({ 
+  id,
   title, 
   description, 
   tags = [],
   index 
 }: { 
+  id: string;
   title: string; 
   description: string; 
   tags: string[];
@@ -29,40 +33,19 @@ const ProjectCard = ({
           ))}
         </div>
         
-        <a 
-          href="#" 
+        <Link 
+          to={`/project/${id}`}
           className="flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors"
         >
           View Project <ArrowRight className="ml-1 h-4 w-4" />
-        </a>
+        </Link>
       </CardContent>
     </Card>
   );
 };
 
 const ProjectsSection = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform with user authentication, product catalog, and payment integration",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"]
-    },
-    {
-      title: "Social Media Dashboard",
-      description: "Interactive dashboard that visualizes social media engagement and performance metrics",
-      tags: ["Next.js", "TypeScript", "Chart.js", "TailwindCSS"]
-    },
-    {
-      title: "Real-time Chat Application",
-      description: "Modern chat application with real-time messaging, notifications, and file sharing capabilities",
-      tags: ["Socket.io", "React", "Express", "PostgreSQL"]
-    },
-    {
-      title: "Task Management System",
-      description: "Collaborative project management tool with task tracking, team assignments, and progress reports",
-      tags: ["React", "Redux", "Node.js", "MongoDB"]
-    }
-  ];
+  const projects = getAllProjects();
 
   return (
     <section id="projects" className="py-20 px-4 md:px-0 relative">
@@ -81,6 +64,7 @@ const ProjectsSection = () => {
               <ProjectCard 
                 key={index}
                 index={index}
+                id={project.id}
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
