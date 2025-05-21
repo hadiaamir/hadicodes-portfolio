@@ -13,7 +13,7 @@ interface ProjectData {
   link?: string;
 }
 
-// Project data scraped from the provided URLs
+// Project data from both the provided URLs and hadiaamir.com/projects
 const projects: ProjectData[] = [
   {
     id: "fintrix",
@@ -194,6 +194,126 @@ const projects: ProjectData[] = [
       "Achieved 82% user retention rate, exceeding industry standards"
     ],
     link: "https://hadiaamir.framer.website/projects/tevvy"
+  },
+  {
+    id: "soulitude",
+    title: "Soulitude",
+    description: "A mental health app focused on mindfulness and stress management",
+    fullDescription: "Soulitude is a comprehensive mental wellness application designed to help users manage stress, anxiety, and improve overall mental health through guided meditation, breathing exercises, and personalized mindfulness techniques.",
+    image: "https://framerusercontent.com/images/so2re4KQJmF8wbl4hPml2iFyGHk.jpg?scale-down-to=2048",
+    tags: ["Health", "React Native", "Firebase", "Redux"],
+    goals: [
+      "Create accessible mental health tools for daily use",
+      "Develop personalized mindfulness recommendations",
+      "Build a supportive community for mental wellness",
+      "Design interfaces that promote calm and reduce anxiety"
+    ],
+    challenges: [
+      "Creating effective guided meditation content",
+      "Building algorithms to detect user stress patterns",
+      "Designing an interface that promotes calm while maintaining engagement"
+    ],
+    solutions: [
+      "Partnered with licensed therapists to create evidence-based content",
+      "Implemented machine learning to recognize stress patterns in usage data",
+      "Used color psychology and minimalist design to create a calming interface"
+    ],
+    outcomes: [
+      "Users reported 38% reduction in daily stress levels",
+      "Average session time of 12 minutes daily",
+      "4.7/5 app store rating with 200,000+ downloads"
+    ],
+    link: "https://hadiaamir.com/projects"
+  },
+  {
+    id: "trackify",
+    title: "Trackify",
+    description: "Employee time tracking and productivity analytics platform",
+    fullDescription: "Trackify is a comprehensive time tracking solution for businesses that helps optimize productivity, manage project timelines, and provide valuable insights into work patterns and resource allocation.",
+    image: "https://framerusercontent.com/images/9D7wI6WIBnMqlVDWmYeYulEa10.jpg?scale-down-to=2048",
+    tags: ["Business", "React", "Node.js", "PostgreSQL", "GraphQL"],
+    goals: [
+      "Create intuitive time tracking for employees",
+      "Provide meaningful analytics for management",
+      "Integrate seamlessly with existing project management tools",
+      "Balance detailed tracking with employee privacy concerns"
+    ],
+    challenges: [
+      "Making time tracking unobtrusive to daily workflows",
+      "Processing large datasets for real-time analytics",
+      "Integrating with diverse project management ecosystems"
+    ],
+    solutions: [
+      "Developed lightweight browser extensions and mobile apps for easy tracking",
+      "Built a scalable analytics engine with GraphQL for efficient data retrieval",
+      "Created flexible API integrations with popular project management platforms"
+    ],
+    outcomes: [
+      "Increased billable time capture by 24% for client organizations",
+      "Provided insights that led to 15% productivity improvements",
+      "Successfully deployed to 300+ companies across various industries"
+    ],
+    link: "https://hadiaamir.com/projects"
+  },
+  {
+    id: "cybershield",
+    title: "CyberShield",
+    description: "Comprehensive cybersecurity solution for small businesses",
+    fullDescription: "CyberShield provides enterprise-grade security solutions tailored for small businesses, offering threat detection, vulnerability assessment, employee training, and incident response in an affordable, easy-to-manage package.",
+    image: "https://framerusercontent.com/images/Off0gfVLmG1NfsIKKgYKxB7OiE.jpg?scale-down-to=2048",
+    tags: ["Security", "React", "Python", "AWS", "Machine Learning"],
+    goals: [
+      "Make enterprise-level security accessible to small businesses",
+      "Automate threat detection and response processes",
+      "Provide actionable security insights without technical jargon",
+      "Create effective security training for non-technical employees"
+    ],
+    challenges: [
+      "Simplifying complex security concepts for small business owners",
+      "Building effective threat detection with limited client resources",
+      "Creating scalable security solutions at an affordable price point"
+    ],
+    solutions: [
+      "Developed AI-powered threat analysis with plain language reporting",
+      "Created cloud-based security monitoring requiring minimal on-premise hardware",
+      "Implemented gamified security training for employee engagement"
+    ],
+    outcomes: [
+      "Reduced security incidents by 76% for client businesses",
+      "Achieved 92% employee completion rate for security training",
+      "Successfully prevented 15 major ransomware attacks across client network"
+    ],
+    link: "https://hadiaamir.com/projects"
+  },
+  {
+    id: "artisan",
+    title: "Artisan",
+    description: "Marketplace connecting skilled craftspeople with customers",
+    fullDescription: "Artisan is a digital marketplace that connects skilled craftspeople and artisans with customers seeking handmade, custom, and unique items, supporting local economies and traditional craftsmanship in the digital age.",
+    image: "https://framerusercontent.com/images/JoKmqR2JMWDBsE4cdS6TGAYJY.jpg?scale-down-to=2048",
+    tags: ["E-commerce", "Vue.js", "Nuxt.js", "MongoDB", "Stripe"],
+    goals: [
+      "Create a platform showcasing artisanal craftsmanship",
+      "Develop fair payment and commission structures",
+      "Build effective search and discovery for unique items",
+      "Design tools for custom order negotiations and fulfillment"
+    ],
+    challenges: [
+      "Creating consistent quality standards across diverse products",
+      "Building shipping solutions for fragile handmade items",
+      "Developing fair pricing models for custom work"
+    ],
+    solutions: [
+      "Implemented a tiered verification system for artisan credentials",
+      "Partnered with specialized shipping providers for handmade goods",
+      "Created flexible quote and negotiation tools for custom orders"
+    ],
+    outcomes: [
+      "Connected 5,000+ artisans with new customer bases",
+      "Generated $2.8M in sales for independent craftspeople in first year",
+      "95% satisfaction rate from both buyers and sellers"
+    ],
+    link: "https://hadiaamir.com/projects"
   }
 ];
 

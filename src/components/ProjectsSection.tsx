@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, Tv, Car, MessageSquare, Utensils, Users } from 'lucide-react';
+import { ArrowRight, Tv, Car, MessageSquare, Utensils, Users, Heart, Clock, Shield, Paintbrush } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getAllProjects } from '@/lib/projectData';
 
@@ -17,6 +17,14 @@ const ProjectIcon = ({ id }: { id: string }) => {
       return <Utensils className="h-5 w-5 text-purple-400" />;
     case 'counselconnect':
       return <Users className="h-5 w-5 text-purple-400" />;
+    case 'soulitude':
+      return <Heart className="h-5 w-5 text-purple-400" />;
+    case 'trackify':
+      return <Clock className="h-5 w-5 text-purple-400" />;
+    case 'cybershield':
+      return <Shield className="h-5 w-5 text-purple-400" />;
+    case 'artisan':
+      return <Paintbrush className="h-5 w-5 text-purple-400" />;
     default:
       return <ArrowRight className="h-5 w-5 text-purple-400" />;
   }
