@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Hadia's Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS featuring:
+- Light and dark mode themes
+- Project showcases
+- Contact form with EmailJS integration
+- Interactive UI components
 
-**URL**: https://lovable.dev/projects/abc12ae5-9637-43cd-a5ef-da8c6eeeb3d3
+## Setup and Installation
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/abc12ae5-9637-43cd-a5ef-da8c6eeeb3d3) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/hadiaamir/hadia-creative-canvas.git
+cd hadia-creative-canvas
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```sh
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Set up environment variables:
+   - Create a `.env` file in the root directory
+   - Add your EmailJS configuration (see `.env.example` for required variables)
+   ```
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## EmailJS Integration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project uses EmailJS for the contact form. To set it up:
 
-**Use GitHub Codespaces**
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Create a new Email Service (Gmail, Outlook, etc.)
+3. Create an Email Template with variables:
+   - `{{name}}` - The sender's name
+   - `{{title}}` - The subject line
+   - `{{message}}` - The message content
+4. Get your Service ID, Template ID, and Public Key
+5. Add them to your `.env` file
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deployment
 
-## What technologies are used for this project?
+### Netlify
 
-This project is built with:
+1. Install Netlify CLI (if not already installed):
+```sh
+npm install -g netlify-cli
+```
 
-- Vite
-- TypeScript
+2. Build the project:
+```sh
+npm run build
+```
+
+3. Deploy using Netlify CLI:
+```sh
+netlify deploy
+```
+
+4. Set up environment variables in Netlify:
+   - Go to Site settings > Build & deploy > Environment
+   - Add the same environment variables from your `.env` file
+
+### Custom Domain
+
+To use a custom domain:
+1. In Netlify, go to Site settings > Domain management
+2. Click "Add custom domain"
+3. Follow the instructions to configure your DNS records
+
+## Technologies Used
+
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
+- Vite
+- shadcn/ui
+- EmailJS
+- React Router
+- Font Awesome
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/abc12ae5-9637-43cd-a5ef-da8c6eeeb3d3) and click on Share -> Publish.
+- `/src/components`: Reusable UI components
+- `/src/pages`: Page components
+- `/src/lib`: Utilities, data, and context
+- `/public`: Static assets like images
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License.
