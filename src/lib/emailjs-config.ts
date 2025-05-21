@@ -11,10 +11,12 @@
 // 4. Get your service ID, template ID, and user ID (public key)
 // 5. Replace the placeholder values below
 
+// For security reasons, actual values should be stored in environment variables
+// or added after cloning the repository
 export const EMAILJS_CONFIG = {
- SERVICE_ID: 'service_d7njs0h', // Replace with your EmailJS service ID
- TEMPLATE_ID: 'template_rllam76', // Replace with your EmailJS template ID
- PUBLIC_KEY: 'Eg8gfL1sQgv6aBDjM', // Replace with your EmailJS public key
+ SERVICE_ID: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+ TEMPLATE_ID: 'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+ PUBLIC_KEY: 'YOUR_PUBLIC_KEY', // Replace with your EmailJS public key
 };
 
 // When you set up your EmailJS template, make sure to include these variables:
